@@ -10,4 +10,4 @@ jobs:
     - name: checkout repository code
       uses: actions/checkout@v2
     - name: testfile content
-      run: cat testfile      
+    - run: cat testfile      
