@@ -9,5 +9,8 @@ jobs:
   - run: echo "Testing"
   - name: checkout repository code
     uses: actions/checkout@v3
+    with:
+    node-version: '12.13.0'
+    check-latest: true
   - name: testfile content
-  - run: cat testfile      
+    run: cat testfile      
