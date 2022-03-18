@@ -2,7 +2,8 @@ name: Build and Publish Docker Image
 
 on:
   push:
-    branches: [ master ]
+    branches: 
+      - master 
 
 jobs:
   build-and-publish:
@@ -13,14 +14,14 @@ jobs:
     
     ## Builds our docker image!
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --tag my-image-name:$(date +%s)
 
     ## Publishes our image to Docker Hub 😎
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         ## the name of our image
-        name: forbsey/go-api
+        name: forbsey/go-github-actions
         ## Here we pass in our Docker Username
         username: ${{ secrets.DOCKER_USERNAME }}
         ## and our Docker password which 
