@@ -8,9 +8,9 @@ jobs:
   - run: echo "How are you?"
   - run: echo "Testing"
   - name: checkout repository code
-    uses: actions/checkout@v3
+    uses: actions/checkout@v2
     with:
-    node-version: '12.13.0'
-    check-latest: true
+      node-version: '12.13.0'
+      check-latest: true
   - name: testfile content
     run: cat testfile
