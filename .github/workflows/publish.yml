@@ -12,7 +12,7 @@ jobs:
     ## checks out our project source code
     - uses: actions/checkout@v2
     ## Builds our docker image!
-    - name: Build the Docker image
+    - name: Build Docker image
       run: docker build . --tag my-image-name:$(date +%s)
 
     ## Publishes our image to Docker Hub 😎
