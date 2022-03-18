@@ -21,6 +21,5 @@ jobs:
       with:
         ## the name of our image
         name: daryl/go-github-actions
-
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: ${{ secrets.dtejares }}
+        password: ${{ secrets.Elliyah2023 }}
