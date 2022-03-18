@@ -8,6 +8,6 @@ jobs:
   - run: echo "How are you?"
   - run: echo "Testing"
   - name: checkout repository code
-    uses: actions/checkout@v2
+    uses: actions/checkout@v3
   - name: testfile content
   - run: cat testfile      
