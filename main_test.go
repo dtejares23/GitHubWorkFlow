@@ -1,9 +1,10 @@
 package main
 
-import (
+import(
 	"fmt"
+	"testing"
 )
 
-func main() {
+func TestPass(t *testing.T) {
 	fmt.Println("Placeholder")
 }
