@@ -3,11 +3,11 @@ on: push
 jobs:
   job1:
   runs-on: ubuntu-latest
-    steps:
-    - run: echo "Hello, Daryl!"
-    - run: echo "How are you?"
-    - run: echo "Testing"
-    - name: checkout repository code
-      uses: actions/checkout@v2
-    - name: testfile content
-    - run: cat testfile      
+  steps:
+  - run: echo "Hello, Daryl!"
+  - run: echo "How are you?"
+  - run: echo "Testing"
+  - name: checkout repository code
+    uses: actions/checkout@v2
+  - name: testfile content
+  - run: cat testfile      
