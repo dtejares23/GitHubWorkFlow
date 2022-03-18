@@ -13,4 +13,4 @@ jobs:
     node-version: '12.13.0'
     check-latest: true
   - name: testfile content
-    run: cat testfile      
+    run: cat testfile
